@@ -23,22 +23,21 @@ export default defineConfig({
       {
         text: 'Build',
         items: [
-          { text: 'Introduction', link: '/build/introduction' },
           { text: 'Frames', items: [
-            { text: 'Overview', link: '/build/frames/overview'  },
-            { text: 'Build your first frame', link: '/build/frames/first-frame'  }
+            { text: 'Build a Frame', link: '/build/frames/build-a-frame'  },
+            { text: 'Frame Concepts', link: '/build/frames/frame-concepts'  },
+            { text: 'Frame Specification', link: '/build/frames/frame-specification'  }
+
           ] },
           { text: 'Open API', items: [
-            { text: 'Overview', link: '/build/open-api/overview' },
-            { text: 'Reference', link: '/build/open-api/reference' },
+            { text: 'Overview', link: '/build/open-api/overview' }
           ] },
         ]
       }
     ],
 
     socialLinks: [
-    // disable for now
-    //  { icon: 'github', link: 'https://github.com/dscvr-one' },
+      { icon: 'discord', link: 'https://discord.gg/DX4CaFph3s' },
       { icon: 'twitter', link: 'https://twitter.com/dscvr1' }
     ]
   }
