@@ -42,8 +42,12 @@ curl 'https://api.dscvr.one/graphql' \
 
 ### Get a User by Username
 
+The following request looks up a user by user name and returns the user's `followingCount` (the number of users a user is following), `followerCount` (the number of users following a user), and `dscvrPoints`.
+
+Request:
+
 ```graphql
-{
+query {
   userByName(name: "PopularDude99") {
     id
     followingCount
@@ -52,3 +56,23 @@ curl 'https://api.dscvr.one/graphql' \
   }
 }
 ```
+
+Response:
+```json
+{
+  "data": {
+    "userByName": {
+      "id": "33tie-5rizy-elcap-bp5ke-jvrws-c5xib-bxpxi-anf74-aryfg-zlpe5-tqe",
+      "followingCount": 93,
+      "followerCount": 122,
+      "dscvrPoints": "7370953305"
+    }
+  }
+}
+```
+
+### Get a User's Public Wallet Addresses
+
+### Get a Content by ID
+
+### Unpack a Frame Action Message
