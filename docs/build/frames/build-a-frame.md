@@ -1,7 +1,5 @@
 # Build a Frame
 
-DSCVR Frames are a new way to create your own integrated experiences within a post on DSCVR. 
-
 This guide will walk you through the process of building a Frame on DSCVR.
 
 ## Getting Started
