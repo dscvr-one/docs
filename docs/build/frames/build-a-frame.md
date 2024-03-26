@@ -43,7 +43,7 @@ npx localtunnel --port 3000
 
 ## Open the Frame in the Frame Validator
 
-DSCVR provides a [Frame Validator](https://www.dscvr.one/dev/frames) to help you identify any issues with your frame before deploying it to the DSCVR platform. You will need a [DSCVR account](www.dscvr.one).
+DSCVR provides a [Frame Validator](https://www.dscvr.one/dev/frames) to help you identify any issues with your frame before deploying it to the DSCVR platform. You will need a [DSCVR account](https://www.dscvr.one).
 
 Once you've opened the Frame Validator, enter the URL and click the button. If everything works, the first page of the frame will successfully load!
 
