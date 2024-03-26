@@ -4,9 +4,13 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "DSCVR",
   description: "DSCVR Documentation",
+  appearance: "force-dark",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    nav: [],
+    nav: [
+      { text: 'Home', link: '/' },
+      { text: 'Build', link: '/build/' },
+    ],
 
     sidebar: [
       {
@@ -17,16 +21,16 @@ export default defineConfig({
         ]
       },
       {
-        text: 'Building',
+        text: 'Build',
         items: [
-          { text: 'Introduction', link: '/building/introduction' },
+          { text: 'Introduction', link: '/build/introduction' },
           { text: 'Frames', items: [
-            { text: 'Overview', link: '/building/frames/overview'  },
-            { text: 'Build your first frame', link: '/building/frames/first-frame'  }
+            { text: 'Overview', link: '/build/frames/overview'  },
+            { text: 'Build your first frame', link: '/build/frames/first-frame'  }
           ] },
-          { text: 'GraphQL API', items: [
-            { text: 'Overview', link: '/building/graphql/overview' },
-            { text: 'Reference', link: '/building/graphql/reference' },
+          { text: 'Open API', items: [
+            { text: 'Overview', link: '/build/open-api/overview' },
+            { text: 'Reference', link: '/build/open-api/reference' },
           ] },
         ]
       }
