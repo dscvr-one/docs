@@ -4,7 +4,7 @@ DSCVR Frames are a new way to create your own integrated experiences within a po
 
 Conceptually, a frame is a set of meta tags that conform to the OpenGraph standard. DSCVR uses these tags to render the frame in a post. A frame is served by a frame server, which is a web server that responds to requests with the frame content.
 
-## Frame Server Interaction
+## Frame Interactions
 
 When a post is first shown to the user, the initial frame request sent to the frame server is a `HTTP GET` request. The frame server should respond to this request with static content that can be cached.
 
@@ -13,6 +13,10 @@ When a post is first shown to the user, the initial frame request sent to the fr
 When a user interacts with the frame, such as clicking a button, the frame server will receive a HTTP POST request with a [message payload](./frame-specification.md). The frame server should respond to this request with updated content based on the message payload.
 
 The message payload contains a signature from the user, which can be verified using the [Open API](../open-api/index.md).
+
+## Frame Distribution
+
+When a user interacts with a frame using a DSCVR client, unique interactions with the frame are verified and logged by DSCVR. Unique interactions influence the user's social graph, which guide the feed algorithms that distribute the frame. While processing a frame interaction, DSCVR verifies the user signature and that the frame is contained in a valid DSCVR post. Please note that to use this capability effectively, the frame URL must remain the same. If the frame appears in several posts, interactions across all the posts will be aggregated.
 
 ## Frames Adapter
 
