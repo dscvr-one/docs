@@ -21,7 +21,7 @@ npm config set "@dscvr-one:registry=https://npm.pkg.github.com/"
 npm create @dscvr-one/frame-starter@latest frame-starter
 ```
 
-This will create a called `frame-starter` in the directory that you run the command.
+This will create a folder called `frame-starter` in the directory that you run the command.
 
 ## Run the Project Locally
 
@@ -35,7 +35,7 @@ This will start the development server on port 3000.
 
 ## Create an Externally Accessible URL
 
-In order the test the frame, you'll need to open a SSH tunnel from the development server to create an externally accessible URL. We use localtunnel for this:
+In order the test the frame, you'll need to open a SSH tunnel from the development server to create an externally accessible URL. We use [localtunnel](https://theboroer.github.io/localtunnel-www/) for this:
 
 ```sh
 npx localtunnel --port 3000
@@ -43,20 +43,20 @@ npx localtunnel --port 3000
 
 ## Open the Frame in the Frame Validator
 
-DSCVR provides a [Frame Validator](https://www.dscvr.one/dev/frames) to help you identify any issues with your frame before deploying it to the DSCVR platform. You will need a [DSCVR account](https://www.dscvr.one).
+DSCVR provides a [Frame Validator](https://www.dscvr.one/dev/frames) to help you identify any issues with your frame before deploying it to the DSCVR platform. You will need a [DSCVR account](https://www.dscvr.one) to use the Frame Validator.
 
 Once you've opened the Frame Validator, enter the URL and click the button. If everything works, the first page of the frame will successfully load!
 
-In the validator, you can see the JSON message that's passed to your frame server, as well as the frame tags returned by the server, in addition to other useful information such as timing.
+In the validator, you can see any detected frame tags returned by your server, as well as the JSON message that's passed to your frame server for any button interactions. Other useful information such as timing is also presented.
 
 ## Next Steps
 
 The frame starter project and other examples provided by DSCVR are [available on GitHub](https://github.com/dscvr-one/frames-examples) and are a great way to get started building a frame. 
 
-One of the learning curves of building a frame is rendering HTML to an image. All the examples provided by DSCVR use the [Satori library](https://github.com/vercel/satori) for this. However, Satori supports [only a subset of HTML and CSS](https://github.com/vercel/satori?tab=readme-ov-file#html-elements). Understanding how best to use Satori is crucial to building a frame with HTML that renders correctly. As an alternative to HTML, many frame developers use GIFs or images creatively for a rich user experience.
+One of the learning curves of building a frame is rendering HTML to an image. All the examples provided by DSCVR use the [Satori library](https://github.com/vercel/satori). However, Satori supports [only a subset of HTML and CSS](https://github.com/vercel/satori?tab=readme-ov-file#html-elements). Understanding how best to use Satori is crucial to building a frame with HTML that renders correctly. As an alternative to HTML, many frame developers use GIFs or images creatively for a rich user experience.
 
 Additionally, the [Open API](https://www.dscvr.one/dev/api) provides rich data to help you build a frame that interacts with the DSCVR platform.
 
 You can deploy the frame using [Vercel](https://vercel.com/), [Cloudflare Workers](https://www.cloudflare.com/), or any other platform of your choice. 
 
-That's it! You've successfully built and tested a frame on DSCVR. If you have any questions, please let us know in the [DSCVR Developer Discord](https://discord.gg/DX4CaFph3s).
+That's it! You've successfully built and tested a frame on DSCVR. If you have any questions, please reach out in the [DSCVR Developer Discord](https://discord.gg/DX4CaFph3s).

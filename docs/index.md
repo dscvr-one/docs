@@ -19,4 +19,4 @@ One of the most talked about opportunities in Web3 is the concept of Frames: a n
 ## Need help?
 Our developer specific Discord server and invite-only DSCVR portal offers a wide range of resources, including detailed API documentation, SDKs, example projects, and developer chat for discussion and collaboration. 
 
-- [Join the DSCVR Developer Discord](https://discord.gg/DX4CaFph3s)
+[Join the DSCVR Developer Discord](https://discord.gg/DX4CaFph3s)

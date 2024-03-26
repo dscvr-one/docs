@@ -30,7 +30,7 @@ export default defineConfig({
 
           ] },
           { text: 'Open API', items: [
-            { text: 'Overview', link: '/build/open-api/overview' }
+            { text: 'Open API Overview', link: '/build/open-api/' }
           ] },
         ]
       }
