@@ -29,9 +29,7 @@ export default defineConfig({
             { text: 'Frame Specification', link: '/build/frames/frame-specification'  }
 
           ] },
-          { text: 'Open API', items: [
-            { text: 'Open API Overview', link: '/build/open-api/' }
-          ] },
+          { text: 'Open API', link: '/build/open-api/' }
         ]
       }
     ],

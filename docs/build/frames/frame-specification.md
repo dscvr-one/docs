@@ -40,19 +40,19 @@ During the initial launch, DSCVR will also accept properties with the `of:` pref
 The following is a valid example of a frame that includes all the required properties:
 
 ```html
-<meta name="of:version" content="vNext">
-<meta name="of:accepts:dscvr" content="0.1.0">
-<meta name="of:post_url" content="https://dscvr-frame-media.vercel.app/frames?p=%2F&amp;s=%7B%7D&amp;r=%7B%7D">
-<meta name="of:input:text" content="Paste your media url">
-<meta name="of:button:1" content="GIF">
-<meta name="of:button:1:action" content="post">
-<meta name="of:button:2" content="SVG">
-<meta name="of:button:2:action" content="post">
-<meta name="of:button:3" content="SVG 2">
-<meta name="of:button:3:action" content="post">
-<meta name="of:button:4" content="Custom">
-<meta name="of:button:4:action" content="post">
-<meta name="of:image" content="https://dscvr-frame-media.vercel.app/png-sample.png">
+<meta property="of:version" content="vNext">
+<meta property="of:accepts:dscvr" content="0.1.0">
+<meta property="of:post_url" content="https://dscvr-frame-media.vercel.app/frames?p=%2F&amp;s=%7B%7D&amp;r=%7B%7D">
+<meta property="of:input:text" content="Paste your media url">
+<meta property="of:button:1" content="GIF">
+<meta property="of:button:1:action" content="post">
+<meta property="of:button:2" content="SVG">
+<meta property="of:button:2:action" content="post">
+<meta property="of:button:3" content="SVG 2">
+<meta property="of:button:3:action" content="post">
+<meta property="of:button:4" content="Custom">
+<meta property="of:button:4:action" content="post">
+<meta property="of:image" content="https://dscvr-frame-media.vercel.app/png-sample.png">
 ```
 
 ## JSON Payload Properties
