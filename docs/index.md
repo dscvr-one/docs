@@ -15,3 +15,9 @@ One of the most talked about opportunities in Web3 is the concept of Frames: a n
 - [Social Primitives](/introduction/social-primitives): Explore the core building blocks of DSCVR
 - [Build a Frame](./building/frames/build-a-frame.md): Learn how to a build a frame on DSCVR
 - [Open API](./building/open-api/index.md): Learn more about the DSCVR Open API
+
+## Need help?
+Our developer specific Discord server and invite-only DSCVR portal offers a wide range of resources, including detailed API documentation, SDKs, example projects, and developer chat for discussion and collaboration. 
+
+- [Join the DSCVR Developer Discord](https://www.discord.com)
+- [Join the Solana Devs DSCVR Portal](https://www.dscvr.one)
