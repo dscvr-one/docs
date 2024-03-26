@@ -9,7 +9,7 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Build', link: '/build/' },
+      { text: 'Build', link: '/build/frames/build-a-frame' },
     ],
 
     sidebar: [

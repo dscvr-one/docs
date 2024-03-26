@@ -55,7 +55,7 @@ The frame starter project and other examples provided by DSCVR are [available on
 
 One of the learning curves of building a frame is rendering HTML to an image. All the examples provided by DSCVR use the [Satori library](https://github.com/vercel/satori) for this. However, Satori supports [only a subset of HTML and CSS](https://github.com/vercel/satori?tab=readme-ov-file#html-elements). Understanding how best to use Satori is crucial to building a frame with HTML that renders correctly. As an alternative to HTML, many frame developers use GIFs or images creatively for a rich user experience.
 
-Additionally, the [DSCVR API](https://www.dscvr.one/dev/api) provides rich data to help you build a frame that interacts with the DSCVR platform.
+Additionally, the [Open API](https://www.dscvr.one/dev/api) provides rich data to help you build a frame that interacts with the DSCVR platform.
 
 You can deploy the frame using [Vercel](https://vercel.com/), [Cloudflare Workers](https://www.cloudflare.com/), or any other platform of your choice. 
 
