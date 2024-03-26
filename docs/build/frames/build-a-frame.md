@@ -49,14 +49,20 @@ Once you've opened the Frame Validator, enter the URL and click the button. If e
 
 In the validator, you can see any detected frame tags returned by your server, as well as the JSON message that's passed to your frame server for any button interactions. Other useful information such as timing is also presented.
 
+## Deploying a Frame
+
+You can deploy the frame using [Vercel](https://vercel.com/), [Cloudflare Workers](https://www.cloudflare.com/), or any other platform of your choice. 
+
+## Posting a Frame
+
+Once your frame is deployed, you can post it on DSCVR in a portal of your choice, by creating a post and copy/pasting the frame URL into the post. You can post several frames in a single post, or post the same frame in several portals for increased visibility.
+
 ## Next Steps
 
 The frame starter project and other examples provided by DSCVR are [available on GitHub](https://github.com/dscvr-one/frames-examples) and are a great way to get started building a frame. 
 
 One of the learning curves of building a frame is rendering HTML to an image. All the examples provided by DSCVR use the [Satori library](https://github.com/vercel/satori). However, Satori supports [only a subset of HTML and CSS](https://github.com/vercel/satori?tab=readme-ov-file#html-elements). Understanding how best to use Satori is crucial to building a frame with HTML that renders correctly. As an alternative to HTML, many frame developers use GIFs or images creatively for a rich user experience.
 
-Additionally, the [Open API](https://www.dscvr.one/dev/api) provides rich data to help you build a frame that interacts with the DSCVR platform.
-
-You can deploy the frame using [Vercel](https://vercel.com/), [Cloudflare Workers](https://www.cloudflare.com/), or any other platform of your choice. 
+Additionally, the [DSCVR API](https://www.dscvr.one/dev/api) provides rich data to help you build a frame that interacts with the DSCVR platform.
 
 That's it! You've successfully built and tested a frame on DSCVR. If you have any questions, please reach out in the [DSCVR Developer Discord](https://discord.gg/DX4CaFph3s).

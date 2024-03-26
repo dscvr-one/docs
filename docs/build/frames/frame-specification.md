@@ -33,7 +33,7 @@ There are three parts to this specification:
 
 ### Compatability with Other Frames Platforms
 
-During the initial launch, DSCVR will also accept properties with the `of:` prefix instead of the `of:` prefix. This is to ensure that frames built for other platforms and existing frameworks can be easily ported to DSCVR.
+During the initial launch, DSCVR will also accept properties with the `of:` prefix instead of the `fc:` prefix. This is to ensure that frames built for other platforms and existing frameworks can be easily ported to DSCVR.
 
 ### Example
 

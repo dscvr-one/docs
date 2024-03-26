@@ -1,0 +1,163 @@
+type ActiveStreak {
+  # The number of days the user has claimed a streak
+  dayCount: Int!
+
+  # The number of multipliers the user has earned
+  multiplierCount: Int!
+}
+
+# A content which is either a post or a comment
+type Content {
+  # The content id
+  id: ContentId!
+
+  # The user who created the content
+  creator: User!
+
+  # The body of the content (this may contain HTML tags)
+  body: String!
+
+  # The content type
+  contentType: ContentType!
+
+  # The portal that the content belongs to.
+  portal: Portal!
+}
+
+scalar ContentId
+
+enum ContentType {
+  POST
+  COMMENT
+}
+
+scalar DscvrId
+
+type FrameMessage {
+  # The content of the post where the frame was clicked. If the content
+  # is not present, then the frame was clicked in a post preview.
+  content: Content
+
+  # The user who clicked the frame
+  user: User!
+
+  # The URL of the frame that was clicked
+  url: String!
+
+  # The timestamp of the click
+  timestamp: Int!
+
+  # The index of the button that was clicked
+  buttonIndex: Int!
+
+  # The text that was input
+  inputText: String
+
+  # The state of the frame application
+  state: String!
+}
+
+# ISO 8601 combined date and time without timezone.
+#
+# # Examples
+#
+# * `2015-07-01T08:59:60.123`,
+scalar NaiveDateTime
+
+# A DSCVR primitive that a community or a project can use to post content
+# share, and collaborate. Portals have roles and permissions that can be
+# used for gating. Roles can be gated using NFTs.
+type Portal {
+  # The portal id
+  id: PortalId!
+
+  # The name of the portal
+  name: String!
+
+  # The portal "slug". This is typically a string identifier used in URLs
+  slug: String!
+
+  # Whether the portal is nost safe for work.
+  isNsfw: Boolean!
+
+  # The number of members in the portal
+  memberCount: Int!
+
+  # The number of posts in the portal
+  postCount: Int!
+
+  # The date and time the portal was created
+  createdAt: NaiveDateTime!
+
+  # The owner of the portal
+  owner: User!
+  description: String!
+  iconUrl: String!
+  coverPhoto: String
+
+  # The roles defined for this portal
+  roles: [Role!]!
+  isMember(id: DscvrId!): Boolean!
+}
+
+scalar PortalId
+
+type Query {
+  # Lookup user by principal
+  user(id: DscvrId!): User
+
+  # Lookup by username
+  userByName(name: String!): User
+
+  # Lookup content from id
+  content(id: ContentId!): Content
+  unpackFrameMessage(message: String!): FrameMessage!
+
+  # Lookup portal by slug
+  portalBySlug(slug: String!): Portal
+
+  # Lookup portal by id
+  portalById(id: PortalId!): Portal
+}
+
+type Role {
+  name: String!
+}
+
+scalar StringNumber
+
+type User {
+  # The id of the user
+  id: DscvrId!
+  username: String!
+  bio: String!
+
+  # The number of users that are following the user
+  followerCount: Int!
+
+  # The number of users that the user is following
+  followingCount: Int!
+
+  # The number of posts created by a user
+  postCount: Int!
+  iconUrl: String!
+
+  # The date and time the user was created
+  createdAt: NaiveDateTime!
+
+  # The number of DSCVR unit points the user has. Note that
+  # the number displayed to the user is this number divided
+  # by 1_000_000.
+  dscvrPoints: StringNumber!
+  streak: ActiveStreak!
+  isFollower(userId: DscvrId!): Boolean!
+  isFollowing(userId: DscvrId!): Boolean!
+  wallets: [Wallet!]!
+}
+
+type Wallet {
+  address: String!
+  isPrimary: Boolean!
+  walletType: String!
+  walletChainType: String!
+}

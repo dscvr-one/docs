@@ -29,7 +29,7 @@ export default defineConfig({
             { text: 'Frame Specification', link: '/build/frames/frame-specification'  }
 
           ] },
-          { text: 'Open API', link: '/build/open-api/' }
+          { text: 'DSCVR API', link: '/build/dscvr-api/' }
         ]
       }
     ],

@@ -12,7 +12,7 @@ When a post is first shown to the user, the initial frame request sent to the fr
 
 When a user interacts with the frame, such as clicking a button, the frame server will receive a HTTP POST request with a [message payload](./frame-specification.md). The frame server should respond to this request with updated content based on the message payload.
 
-The message payload contains a signature from the user, which can be verified using the [Open API](../open-api/index.md).
+The message payload contains a signature from the user, which can be verified using the [DSCVR API](../dscvr-api/index.md).
 
 ## Frame Distribution
 
