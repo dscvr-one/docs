@@ -6,21 +6,18 @@ export default defineConfig({
   description: "DSCVR Documentation",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Introduction', link: '/introduction/what-is-dscvr' },
-    ],
+    nav: [],
 
     sidebar: [
       {
         text: 'Introduction',
         items: [
-          { text: 'What is DSCVR?', link: '/introduction/what-is-dscvr' },
-          { text: 'Social Primitives', link: '/introduction/social-primitives' },
+          { text: 'What is DSCVR?', link: '/' },
+          { text: 'Social Primitives', link: '/introduction/social-primitives' }
         ]
       },
       {
-        text: 'Building on DSCVR',
+        text: 'Building',
         items: [
           { text: 'Introduction', link: '/building/introduction' },
           { text: 'Frames', items: [
@@ -36,7 +33,8 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/dscvr-one' },
+    // disable for now
+    //  { icon: 'github', link: 'https://github.com/dscvr-one' },
       { icon: 'twitter', link: 'https://twitter.com/dscvr1' }
     ]
   }
