@@ -2,7 +2,7 @@
 
 DSCVR Frames are a new way to create your own integrated experiences within a post on DSCVR. 
 
-Conceptually, a frame is a set of meta tags that conform to the OpenGraph standard. DSCVR uses these tags to render the frame in a post. A frame is served by a frame server, which is a web server that responds to requests with the frame content.
+Conceptually, a frame is a set of meta tags that build on top of the OpenGraph standard. DSCVR uses these tags to render the frame in a post. A frame is served by a frame server, which is a web server that responds to requests with the frame content.
 
 ## Frame Interactions
 
@@ -10,7 +10,7 @@ When a post is first shown to the user, the initial frame request sent to the fr
 
 > Note: If you do not want the initial frame response to be cached, which is useful for initial development, please be sure to set the `Cache-Control` header to `no-cache`.
 
-When a user interacts with the frame, such as clicking a button, the frame server will receive a HTTP POST request with a [message payload](./frame-specification.md). The frame server should respond to this request with updated content based on the message payload.
+When a user interacts with the frame, such as clicking a button, the frame server will receive a HTTP POST request with a [message payload as defined in thre frame specification](./frame-specification.md#json-payload-properties). The frame server should respond to this request with [updated frame](./frame-specification.md#html-meta-tag-properties) based on the message payload.
 
 The message payload contains a signature from the user, which can be verified using the [DSCVR API](../dscvr-api/index.md).
 
@@ -24,4 +24,4 @@ DSCVR provides a [frames-adapter package](https://github.com/dscvr-one/frames-ad
 
 ## Frame Specification
 
-DSCVR supports the [Open Frame Specification](https://github.com/open-frames/standard/blob/v0.0.1/README.md), such that developers can build frames that are interoperable with other platforms. DSCVR also supports additional tags and fields that are specific to the DSCVR platform; these are detailed in the [DSCVR Frame Specification](./frame-specification.md).
+Please refer to the [DSCVR Frame Specification](./frame-specification.md) for a detailed description of the HTML Meta Tags and JSON payloads that are used to build a frame.

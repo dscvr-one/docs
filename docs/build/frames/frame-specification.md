@@ -1,6 +1,8 @@
 # Frame Specification
 
-DSCVR supports the [Open Frame Specification v0.0.2](https://github.com/open-frames/standard/blob/main/README.md) for interoperability with other platforms. DSCVR also supports additional tags and fields that are specific to the DSCVR platform. This document describes the comprehensive set of tags and fields that are supported by DSCVR.
+DSCVR supports the [Open Frame Specification v0.0.2](https://github.com/open-frames/standard/blob/main/README.md) to enable interoperability with other Frames platforms like [Farcaster](https://docs.farcaster.xyz/reference/frames/spec) and [XMTP](https://xmtp.org/docs/build/frames). 
+
+DSCVR also supports tags and fields that are specific to the DSCVR platform. This document describes the comprehensive set of tags and fields that are supported by DSCVR.
 
 There are three parts to this specification: 
 
@@ -31,9 +33,9 @@ There are three parts to this specification:
 | `of:image:alt` | Alt text associated with the image for accessibility |
 | `of:state` | A state serialized to a string (for example via JSON.stringify()). Maximum 4096 bytes. Will be ignored if included on the initial frame |
 
-### Compatability with Other Frames Platforms
+### Compatability with Farcaster Frames
 
-During the initial launch, DSCVR will also accept properties with the `of:` prefix instead of the `fc:` prefix. This is to ensure that frames built for other platforms and existing frameworks can be easily ported to DSCVR.
+For compatability with Farcaster frames, DSCVR will also accept properties with  `fc:` prefix.
 
 ### Example
 
@@ -84,6 +86,8 @@ type FramesPost = {
 - Use `timestamp` instead of the `unixTimestamp`
 
 ## Frame Server Expectations
+
+DSCVR remain consistent with the [Farcaster specification](https://docs.farcaster.xyz/reference/frames/spec#handling-responses) for expected behavior from a frame server.
 
 - Respond to any POST request within 5 seconds.
 - Respond to a `post` button click with a `200 OK` and another frame. `3xx` redirects that ultimately yield a `200` and a frame will be followed.
