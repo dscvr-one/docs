@@ -4,9 +4,13 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "DSCVR",
   description: "DSCVR Documentation",
+  appearance: "force-dark",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    nav: [],
+    nav: [
+      { text: 'Home', link: '/' },
+      { text: 'Build', link: '/build/frames/build-a-frame' },
+    ],
 
     sidebar: [
       {
@@ -17,24 +21,21 @@ export default defineConfig({
         ]
       },
       {
-        text: 'Building',
+        text: 'Build',
         items: [
-          { text: 'Introduction', link: '/building/introduction' },
           { text: 'Frames', items: [
-            { text: 'Overview', link: '/building/frames/overview'  },
-            { text: 'Build your first frame', link: '/building/frames/first-frame'  }
+            { text: 'Build a Frame', link: '/build/frames/build-a-frame'  },
+            { text: 'Frame Concepts', link: '/build/frames/frame-concepts'  },
+            { text: 'Frame Specification', link: '/build/frames/frame-specification'  }
+
           ] },
-          { text: 'GraphQL API', items: [
-            { text: 'Overview', link: '/building/graphql/overview' },
-            { text: 'Reference', link: '/building/graphql/reference' },
-          ] },
+          { text: 'DSCVR API', link: '/build/dscvr-api/' }
         ]
       }
     ],
 
     socialLinks: [
-    // disable for now
-    //  { icon: 'github', link: 'https://github.com/dscvr-one' },
+      { icon: 'discord', link: 'https://discord.gg/DX4CaFph3s' },
       { icon: 'twitter', link: 'https://twitter.com/dscvr1' }
     ]
   }
