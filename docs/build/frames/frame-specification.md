@@ -35,7 +35,7 @@ There are three parts to this specification:
 
 ### Compatability with Farcaster Frames
 
-For compatability with Farcaster frames, DSCVR will also accept properties with  `fc:` prefix.
+For compatability with Farcaster frames, DSCVR will also accept properties with the `fc:` prefix.
 
 ### Example
 
@@ -87,7 +87,7 @@ type FramesPost = {
 
 ## Frame Server Expectations
 
-DSCVR remain consistent with the [Farcaster specification](https://docs.farcaster.xyz/reference/frames/spec#handling-responses) for expected behavior from a frame server.
+DSCVR remains consistent with the [Farcaster Frames Specification](https://docs.farcaster.xyz/reference/frames/spec#handling-responses) for expected behavior from a frame server.
 
 - Respond to any POST request within 5 seconds.
 - Respond to a `post` button click with a `200 OK` and another frame. `3xx` redirects that ultimately yield a `200` and a frame will be followed.
