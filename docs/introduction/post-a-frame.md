@@ -6,8 +6,7 @@
 4. Add any other text, media, or memes you’d like to have in your Frame post. 
 5. Click Post, and admire your awesome new DSCVR post featuring a Frame. 🖼️
 
-
-# Examples You Can Post Now!
+## Examples You Can Post Now!
 
 - **Who’s that Pokemon?**<br/>
     Frame Url: https://pokeframe.joepetrich.com/ <br/>
