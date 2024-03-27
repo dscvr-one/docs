@@ -17,7 +17,7 @@ There are three parts to this specification:
 | Property | Description |
 | --- | --- |
 | `of:version`  | The version label of the Open Frames spec. Currently the only supported version is `vNext` |
-| `of:accepts:dscvr` | This property should be present to indicate compatability with DSCVR. The content should be set to `0.1.0`. <br/><br/>Please note that during an initial launch period, the DSCVR client will render frames even if this property is not present.  |
+| `of:accepts:dscvr` | This property should be present to indicate compatibility with DSCVR. The content should be set to `0.1.0`. <br/><br/>Please note that during an initial launch period, the DSCVR client will render frames even if this property is not present.  |
 | `of:image` | An image which should have an aspect ratio of `1.91:1` or `1:1`.  |
 | `og:image` | An image which should have an aspect ratio of `1.91:1`. Fallback for clients that do not support frames. |
 
@@ -33,9 +33,9 @@ There are three parts to this specification:
 | `of:image:alt` | Alt text associated with the image for accessibility |
 | `of:state` | A state serialized to a string (for example via JSON.stringify()). Maximum 4096 bytes. Will be ignored if included on the initial frame |
 
-### Compatability with Farcaster Frames
+### Compatibility with Farcaster Frames
 
-For compatability with Farcaster frames, DSCVR will also accept properties with the `fc:` prefix.
+For compatibility with Farcaster frames, DSCVR will also accept properties with the `fc:` prefix.
 
 ### Example
 

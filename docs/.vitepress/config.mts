@@ -17,7 +17,8 @@ export default defineConfig({
         text: 'Introduction',
         items: [
           { text: 'What is DSCVR?', link: '/' },
-          { text: 'Social Primitives', link: '/introduction/social-primitives' }
+          { text: 'Social Primitives', link: '/introduction/social-primitives' },
+          { text: 'Post a Frame', link: '/introduction/post-a-frame' }
         ]
       },
       {
