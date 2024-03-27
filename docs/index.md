@@ -4,7 +4,7 @@ With over half a million monthly unique visitors, DSCVR (pronounced â€œDiscoverâ
 
 Interested in creating a free account? Head to [dscvr.one](https://www.dscvr.one) to claim your username and set up your profile.
 
-## DSCVR API Launch
+## DSCVR API
 
 Introducing the DSCVR API: create your own social embedded applications. The DSCVR API offers developers the opportunity to create crypto-enabled applications with deep integrations throughout a leading Web3 social network.
 
