@@ -15,9 +15,6 @@ The easiest way to get started with building a frame is to use the "Frame Starte
 To setup the "Frame Starter" project, run the following commands:
 
 ```sh
-# Add the dscvr-one registry 
-npm config set "@dscvr-one:registry=https://npm.pkg.github.com/"
-# Create the project
 npm create @dscvr-one/frame-starter@latest frame-starter
 ```
 
