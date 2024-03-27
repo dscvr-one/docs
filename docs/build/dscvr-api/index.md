@@ -1,6 +1,6 @@
 # DSCVR API
 
-Access DSCVR's SocialFi graph via a [GraphQL API](https://graphql.org/learn/).
+DSCVR API provides access to DSCVR's SocialFi graph via a powerful and flexible GraphQL API. The API is designed to be easy to use and to provide all the information needed to build a wide range of applications on top of the DSCVR platform.
 
 ## Explore the Schema
 
@@ -44,7 +44,7 @@ curl 'https://api.dscvr.one/graphql' \
 
 ### Get a User by Username
 
-The following request looks up a user by user name and returns the user's `followingCount` (the number of users a user is following), `followerCount` (the number of users following a user), and `dscvrPoints`.
+The following request looks up a user by user name and returns the user's `followingCount` (the number of users a user is following), `followerCount` (the number of users following a user), `dscvrPoints`, and if the user is following another user with a specific id.
 
 Request:
 
@@ -55,6 +55,7 @@ query {
     followingCount
     followerCount
     dscvrPoints
+    isFollowing(userId:"slrjv-o4wlb-7mjt3-rjegb-psx7i-5ndvk-qkesi-ks3c3-mplfb-ort5m-bqe")
   }
 }
 ```
@@ -67,7 +68,8 @@ Response:
       "id": "33tie-5rizy-elcap-bp5ke-jvrws-c5xib-bxpxi-anf74-aryfg-zlpe5-tqe",
       "followingCount": 93,
       "followerCount": 122,
-      "dscvrPoints": "7370953305"
+      "dscvrPoints": "7370953305",
+      "isFollowing": true
     }
   }
 }

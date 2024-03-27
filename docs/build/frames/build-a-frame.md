@@ -6,7 +6,7 @@ This guide will walk you through the process of building a Frame on DSCVR.
 
 To build a frame, you'll first need an understanding of the [Frame Concepts](./frame-concepts.md).
 
-Aditionally, while frames can be implemented in any programming language and webserver framework, for the purposes of this guide you will need an understanding of Typescript. 
+Additionally, while frames can be implemented in any programming language and webserver framework, for the purposes of this guide you will need to have an understanding of Typescript. 
 
 ## Setup the "Frame Starter" Project
 
@@ -61,7 +61,7 @@ Once your frame is deployed, you can post it on DSCVR in a portal of your choice
 
 The frame starter project and other examples provided by DSCVR are [available on GitHub](https://github.com/dscvr-one/frames-examples) and are a great way to get started building a frame. 
 
-One of the learning curves of building a frame is rendering HTML to an image. All the examples provided by DSCVR use the [Satori library](https://github.com/vercel/satori). However, Satori supports [only a subset of HTML and CSS](https://github.com/vercel/satori?tab=readme-ov-file#html-elements). Understanding how best to use Satori is crucial to building a frame with HTML that renders correctly. As an alternative to HTML, many frame developers use GIFs or images creatively for a rich user experience.
+One of the learning curves of building a frame is rendering HTML to an image. All the examples provided by DSCVR use [frames.js](https://framesjs.org) for rendering the frame, which internally uses the [Satori library](https://github.com/vercel/satori). However, Satori supports [only a subset of HTML and CSS](https://github.com/vercel/satori?tab=readme-ov-file#html-elements). Understanding how best to use Satori is crucial to building a frame with HTML that renders correctly. As an alternative to HTML, many frame developers use GIFs or images creatively for a rich user experience.
 
 Additionally, the [DSCVR API](https://www.dscvr.one/dev/api) provides rich data to help you build a frame that interacts with the DSCVR platform.
 

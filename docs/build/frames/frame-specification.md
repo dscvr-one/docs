@@ -1,6 +1,8 @@
 # Frame Specification
 
-DSCVR supports the [Open Frame Specification v0.0.2](https://github.com/open-frames/standard/blob/main/README.md) for interoperability with other platforms. DSCVR also supports additional tags and fields that are specific to the DSCVR platform. This document describes the comprehensive set of tags and fields that are supported by DSCVR.
+DSCVR supports the [Open Frame Specification v0.0.2](https://github.com/open-frames/standard/blob/main/README.md) to enable interoperability with other Frames platforms like [Farcaster](https://docs.farcaster.xyz/reference/frames/spec) and [XMTP](https://xmtp.org/docs/build/frames). 
+
+DSCVR also supports tags and fields that are specific to the DSCVR platform. This document describes the comprehensive set of tags and fields that are supported by DSCVR.
 
 There are three parts to this specification: 
 
@@ -15,7 +17,7 @@ There are three parts to this specification:
 | Property | Description |
 | --- | --- |
 | `of:version`  | The version label of the Open Frames spec. Currently the only supported version is `vNext` |
-| `of:accepts:dscvr` | This property should be present to indicate compatability with DSCVR. The content should be set to `0.1.0`. <br/><br/>Please note that during an initial launch period, the DSCVR client will render frames even if this property is not present.  |
+| `of:accepts:dscvr` | This property should be present to indicate compatibility with DSCVR. The content should be set to `0.1.0`. <br/><br/>Please note that during an initial launch period, the DSCVR client will render frames even if this property is not present.  |
 | `of:image` | An image which should have an aspect ratio of `1.91:1` or `1:1`.  |
 | `og:image` | An image which should have an aspect ratio of `1.91:1`. Fallback for clients that do not support frames. |
 
@@ -31,9 +33,9 @@ There are three parts to this specification:
 | `of:image:alt` | Alt text associated with the image for accessibility |
 | `of:state` | A state serialized to a string (for example via JSON.stringify()). Maximum 4096 bytes. Will be ignored if included on the initial frame |
 
-### Compatability with Other Frames Platforms
+### Compatibility with Farcaster Frames
 
-During the initial launch, DSCVR will also accept properties with the `of:` prefix instead of the `fc:` prefix. This is to ensure that frames built for other platforms and existing frameworks can be easily ported to DSCVR.
+For compatibility with Farcaster frames, DSCVR will also accept properties with the `fc:` prefix.
 
 ### Example
 
@@ -84,6 +86,8 @@ type FramesPost = {
 - Use `timestamp` instead of the `unixTimestamp`
 
 ## Frame Server Expectations
+
+DSCVR remains consistent with the [Farcaster Frames Specification](https://docs.farcaster.xyz/reference/frames/spec#handling-responses) for expected behavior from a frame server.
 
 - Respond to any POST request within 5 seconds.
 - Respond to a `post` button click with a `200 OK` and another frame. `3xx` redirects that ultimately yield a `200` and a frame will be followed.
