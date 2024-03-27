@@ -6,11 +6,16 @@ This guide will walk you through the process of building a Frame on DSCVR.
 
 To build a frame, you'll first need an understanding of the [Frame Concepts](./frame-concepts.md).
 
-Additionally, while frames can be implemented in any programming language and webserver framework, for the purposes of this guide you will need to have an understanding of Typescript. 
+Additionally, while frames can be implemented in any programming language and web server framework, for the purposes of this guide you will need to have an understanding of Typescript. 
 
 ## Setup the "Frame Starter" Project
 
 The easiest way to get started with building a frame is to use the "Frame Starter" project. This project is a simple Typescript project that includes all the necessary boilerplate code to get you started building a frame.
+
+You'll need the following tools to get started:
+
+- node >= 20
+- [pnpm](https://pnpm.io/installation)
 
 To setup the "Frame Starter" project, run the following commands:
 
@@ -52,7 +57,7 @@ You can deploy the frame using [Vercel](https://vercel.com/), [Cloudflare Worker
 
 ## Posting a Frame
 
-Once your frame is deployed, you can post it on DSCVR in a portal of your choice, by creating a post and copy/pasting the frame URL into the post. You can post several frames in a single post, or post the same frame in several portals for increased visibility.
+Once your frame is deployed, you can [post it on DSCVR](../../introduction/post-a-frame.md). You can post the same frame in several posts for increased visibility or several frames in a single post to create a frame gallery.
 
 ## Next Steps
 

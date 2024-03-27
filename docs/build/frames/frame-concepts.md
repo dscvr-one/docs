@@ -10,7 +10,7 @@ When a post is first shown to the user, the initial frame request sent to the fr
 
 > Note: If you do not want the initial frame response to be cached, which is useful for initial development, please be sure to set the `Cache-Control` header to `no-cache`.
 
-When a user interacts with the frame, such as clicking a button, the frame server will receive a HTTP POST request with a [message payload as defined in thre frame specification](./frame-specification.md#json-payload-properties). The frame server should respond to this request with [updated frame](./frame-specification.md#html-meta-tag-properties) based on the message payload.
+When a user interacts with the frame, such as clicking a button, the frame server will receive a HTTP POST request with a [message payload as defined in the frame specification](./frame-specification.md#json-payload-properties). The frame server should respond to this request with [updated frame](./frame-specification.md#html-meta-tag-properties) based on the message payload.
 
 The message payload contains a signature from the user, which can be verified using the [DSCVR API](../dscvr-api/index.md).
 

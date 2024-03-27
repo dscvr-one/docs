@@ -35,7 +35,7 @@ There are three parts to this specification:
 
 ### Compatibility with Farcaster Frames
 
-For compatibility with Farcaster frames, DSCVR will also accept properties with the `fc:` prefix.
+For compatibility with [Farcaster frames](https://docs.farcaster.xyz/reference/frames/spec), DSCVR will also accept properties with the `fc:` prefix.
 
 ### Example
 

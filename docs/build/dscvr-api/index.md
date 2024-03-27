@@ -27,7 +27,7 @@ Currently, DSCVR API does not require authentication. Queries are made with the 
 
 ## Schema Version
 
-While, GraphQL schema is versionless; in practice it's useful to communicate changes with a version when backwards-incompatible changes are made. The current version of the schema is `0.1.0`.
+While, GraphQL schema is version-less; in practice it's useful to communicate changes with a version when backwards-incompatible changes are made. The current version of the schema is `0.1.0`.
 
 Please note that this version of the DSCVR API should be considered alpha, and is subject to change.
 
