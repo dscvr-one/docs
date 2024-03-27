@@ -10,7 +10,7 @@ Introducing the DSCVR API: create your own social embedded applications. The DSC
 
 Phase I of the DSCVR API allows developers to create embeddable apps within posts called DSCVR Frames. Through Frames, developers and projects can target DSCVR’s social graph and get viral distribution for their apps in the DSCVR feed. Users will discover Frames that are trending among their connections and communities.
 
-Frames are one of the most talked about new concepts in Web3 and DSCVR has developed on and contributed to the [Open Frames](https://github.com/open-frames/standard/blob/v0.0.1/README.md) standard. However, Frames are just the tip of the iceberg; our API will continue to expand to allow for more robust embeddable applications and deeper integrations throughout DSCVR.
+Frames are one of the most talked about new concepts in Web3 and DSCVR has developed upon and plans to continue to contribute to the [Open Frames](https://github.com/open-frames/standard/blob/v0.0.1/README.md) standard. However, Frames are just the tip of the iceberg; our API will continue to expand to allow for more robust embeddable applications and deeper integrations throughout DSCVR.
 
 ## Learn More
 

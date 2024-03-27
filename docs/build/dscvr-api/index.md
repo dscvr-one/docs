@@ -1,6 +1,6 @@
 # DSCVR API
 
-Access DSCVR's SocialFi graph via a [GraphQL API](https://graphql.org/learn/).
+DSCVR API provides access to DSCVR's SocialFi graph via a powerful and flexible GraphQL API. The API is designed to be easy to use and to provide all the information needed to build a wide range of applications on top of the DSCVR platform.
 
 ## Explore the Schema
 
