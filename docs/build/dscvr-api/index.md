@@ -27,7 +27,7 @@ Currently, DSCVR API does not require authentication. Queries are made with the 
 
 ## Schema Version
 
-While, GraphQL schema is versionless; in practice it's useful to communicate changes with a version when backwards-incompatible changes are made. The current version of the schema is `0.1.0`.
+While, GraphQL schema is version-less; in practice it's useful to communicate changes with a version when backwards-incompatible changes are made. The current version of the schema is `0.1.0`.
 
 Please note that this version of the DSCVR API should be considered alpha, and is subject to change.
 
@@ -79,7 +79,9 @@ Response:
 
 This request looks up a user by user name and returns the user's public wallet addresses, as well as other information such as the user's `createdAt` timestamp, `dscvrPoints`, and `streak` information.
 
-> Note: The public wallet addresses are base64 encoded. The `isPrimary` field indicates whether the wallet is the user's primary wallet. Only addresses that the user has chosen to make public are returned.
+> Note: Only addresses that the user has chosen to make public to the API in the DSCVR Wallet Settings are returned. The `isPrimary` field indicates whether the wallet is the user's primary wallet. 
+
+> Note: The public wallet addresses are base64 encoded.
 
 > Note: This specific query should be used for illustrative purposes only as this is a test account. However, the query should work in general for any user that has made their wallet addresses public.
 
