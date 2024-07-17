@@ -8,13 +8,13 @@ Currently, launching an application is very straightforward. Just create a post 
 DSCVR Canvas is currently in early preview. The UX, protocol, and tooling may change as the framework evolves.
 :::
  
-## Building a Canvas Application
+## Building
 
 Canvas Applications can be built using any web application framework. Any application that embeds the appropriate meta tags, follows the client to host protocol, and has the appropriate Content Security Policy can be a Canvas Application.
 
 DSCVR's recommendation is to use TypeScript/JavaScript with a UI framework of your choice. DSCVR provides a [Client SDK package](https://www.npmjs.com/package/@dscvr-one/canvas-client-sdk) that implements the client to host protocol, and will keep it up to date as the protocol changes.
 
-## Quick Start for Existing Applications
+## Existing Applications
 
 If you have an existing TypeScript/JavaScript web application, the following steps can be used to make it a Canvas Application:
 
@@ -50,7 +50,7 @@ if (response) {
 
 4. Configure the Content Security Policy to include any external URLs that your application needs to access. 
    
-   Please refer to the [How Canvas Applications are Secured](#how-canvas-applications-are-secured) section for more information on why this needs to be done. 
+   Please refer to the [Security](#security) section for more information on why this needs to be done. 
    
    The [sample content security policy](https://github.com/dscvr-one/dscvr-canvas/blob/main/examples/jupiter-swap/vercel.json#L8) used in the Jupiter Swap example can serve as a useful reference for specifying your own Content Security Policy.
 
@@ -62,7 +62,7 @@ There are a few examples of Canvas Applications that you can use as a reference:
 - [Jupiter Swap](https://github.com/dscvr-one/dscvr-canvas/tree/main/examples/jupiter-swap)
 - [Solana Transactionn](https://github.com/dscvr-one/dscvr-canvas/tree/main/examples/transaction)
 
-## How Canvas Applications are Secured
+## Security
 
 To protect users, application developers and the DSCVR platform, Canvas Applications are run in a [sandboxed iframe](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe#sandbox) with a strict [Content Security Policy (CSP)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP). 
 
