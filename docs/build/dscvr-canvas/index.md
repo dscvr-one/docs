@@ -1,6 +1,6 @@
 # DSCVR Canvas (Early Preview)
 
-DSCVR Canvas is a framework for building embedded applications in DSCVR. Canvas applications are just regular web applications that run in a [sandboxed iFrame](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe#sandbox). 
+DSCVR Canvas is a framework for building embedded applications in DSCVR. Canvas applications are just regular web applications that run in a [sandboxed iframe](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe#sandbox). 
 
 Currently, launching an application is very straightforward. Just create a post with your Application's URL. The Application will be automatically registered, and distributed to DSCVR's users. If you like, you can embed your application in multiple posts across different portals/communities.
 
