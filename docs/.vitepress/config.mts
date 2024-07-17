@@ -24,13 +24,14 @@ export default defineConfig({
       {
         text: 'Build',
         items: [
-          { text: 'Frames', items: [
+          { text: 'DSCVR Canvas (Early Preview)', link: '/build/dscvr-canvas/'},
+          { text: 'DSCVR API', link: '/build/dscvr-api/' },
+          { text: 'Frames (Legacy)', items: [
             { text: 'Build a Frame', link: '/build/frames/build-a-frame'  },
             { text: 'Frame Concepts', link: '/build/frames/frame-concepts'  },
             { text: 'Frame Specification', link: '/build/frames/frame-specification'  }
 
-          ] },
-          { text: 'DSCVR API', link: '/build/dscvr-api/' }
+          ], link: '/build/frames/build-a-frame'  }
         ]
       }
     ],
