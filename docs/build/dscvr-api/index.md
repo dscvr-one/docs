@@ -81,7 +81,7 @@ This request looks up a user by user name and returns the user's public wallet a
 
 > Note: Only addresses that the user has chosen to make public to the API in the DSCVR Wallet Settings are returned. The `isPrimary` field indicates whether the wallet is the user's primary wallet. 
 
-> Note: The public wallet addresses are base64 encoded.
+> Note: The public wallet addresses are base58 encoded.
 
 > Note: This specific query should be used for illustrative purposes only as this is a test account. However, the query should work in general for any user that has made their wallet addresses public.
 
@@ -122,7 +122,7 @@ Response:
       "id": "33tie-5rizy-elcap-bp5ke-jvrws-c5xib-bxpxi-anf74-aryfg-zlpe5-tqe",
       "wallets": [
         {
-          "address": "GNznRqfRXfGR6ZdJ80agn0xfeNi6aRVRLvh94wK+jBM=",
+          "address": "F3MdmVQkRSy56FSKroYawfMk1RJFo42Quzz8VTmFzPVz",
           "isPrimary": true
         }
       ]
