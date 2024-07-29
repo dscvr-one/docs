@@ -1,8 +1,10 @@
 # What is DSCVR?
 
-With over half a million monthly unique visitors, DSCVR (pronounced “Discover”) is the largest Web3 social network and community building platform. DSCVR combines the usability of a Web2-style social app with crypto technology that unlocks ownership, monetization and distribution for users, creators, and projects. Through its native token functionality, DSCVR rewards users and supercharges community-building, while its API allows developers to build applications that target through the social graph, distribute through the feed, and monetize in posts. In the face of increasing frustration with Web2 social, DSCVR is bringing back openness, fairness, and optimism.
+With over half a million monthly unique visitors, DSCVR (pronounced “Discover”) is the largest Web3 social network and community building platform. DSCVR combines the usability of a Web2-style social app with crypto technology that unlocks ownership, monetization and distribution for users, creators, and projects. Through its token-based features, DSCVR rewards users and supercharges community-building, while its API allows developers to build applications that target through the social graph, distribute through the feed, and monetize in posts. 
 
-Interested in creating a free account? Head to [dscvr.one](https://www.dscvr.one) to claim your username and set up your profile.
+With the launch of DSCVR Canvas, a groundbreaking framework which enables any web app to be integrated in just a few steps and distributed to hundreds of thousands of DSCVR users, developers now have unprecedented opportunities to reach new audiences, enhance user experiences, and drive innovation within the web3 social ecosystem. In the face of increasing frustration with Web2 social, DSCVR is bringing back openness, fairness, and optimism.
+
+Interested in creating a free account? Head to dscvr.one to claim your username and set up your profile.
 
 ## DSCVR API
 
