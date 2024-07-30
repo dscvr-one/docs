@@ -57,7 +57,7 @@ You can deploy the frame using [Vercel](https://vercel.com/), [Cloudflare Worker
 
 ## Posting a Frame
 
-Once your frame is deployed, you can [post it on DSCVR](../../introduction/post-a-frame.md). You can post the same frame in several posts for increased visibility or several frames in a single post to create a frame gallery.
+Once your frame is deployed, you can [post it on DSCVR](../frames/post-a-frame.md). You can post the same frame in several posts for increased visibility or several frames in a single post to create a frame gallery.
 
 ## Next Steps
 

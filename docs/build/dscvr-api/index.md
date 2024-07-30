@@ -81,7 +81,7 @@ This request looks up a user by user name and returns the user's public wallet a
 
 > Note: Only addresses that the user has chosen to make public to the API in the DSCVR Wallet Settings are returned. The `isPrimary` field indicates whether the wallet is the user's primary wallet. 
 
-> Note: The public wallet addresses are base64 encoded.
+> Note: The public wallet addresses are base58 encoded.
 
 > Note: This specific query should be used for illustrative purposes only as this is a test account. However, the query should work in general for any user that has made their wallet addresses public.
 
@@ -122,7 +122,7 @@ Response:
       "id": "33tie-5rizy-elcap-bp5ke-jvrws-c5xib-bxpxi-anf74-aryfg-zlpe5-tqe",
       "wallets": [
         {
-          "address": "GNznRqfRXfGR6ZdJ80agn0xfeNi6aRVRLvh94wK+jBM=",
+          "address": "F3MdmVQkRSy56FSKroYawfMk1RJFo42Quzz8VTmFzPVz",
           "isPrimary": true
         }
       ]
@@ -167,43 +167,4 @@ Response:
     }
   }
 }
-```
-
-### Unpack a Frame Action Message
-
-This request is used to unpack a frame action message. The message is a base64 encoded string that is sent to the frame server when a user interacts with a frame. This query illustrates the flexibility and power of the GraphQL API, where all the information needed by the client can be retrieved via a single query.
-
-> Note: The easiest way to obtain the `messageBytes` is to use the `trustedData.messageBytes` field from the `POST` payload sent to the frame server via the [Frame Validator](https://dscvr.one/dev/frames)
-
-> Note: The frame message is only valid for a certain amount of time, and in the future on-time use messages may also be generated.
-
-Request:
-```graphql
-query {
-  unpackFrameMessage(message:"2dn3o2djb250ZW50pmNhcmdYvERJREwAAXGzAXsiYnV0dG9uSW5kZXgiOjIsInVybCI6Imh0dHBzOi8vZHNjdnItZnJhbWUtY2Fyb3VzZWwudmVyY2VsLmFwcC8iLCJzdGF0ZSI6IiIsInRpbWVzdGFtcCI6MTcxMTUwNjM5NzcyMCwiZHNjdnJJZCI6IjMzdGllLTVyaXp5LWVsY2FwLWJwNWtlLWp2cndzLWM1eGliLWJ4cHhpLWFuZjc0LWFyeWZnLXpscGU1LXRxZSJ9a2NhbmlzdGVyX2lkSgAAAAAAMAAYAQFuaW5ncmVzc19leHBpcnkbF8B+OBRw5cBrbWV0aG9kX25hbWV1bG9nX2ZyYW1lX2ludGVyYWN0aW9ubHJlcXVlc3RfdHlwZWVxdWVyeWZzZW5kZXJYHSjOCLEB4X9URNY2kLt0BDd90AaX/ARwU2VvJ2cCbXNlbmRlcl9wdWJrZXlYLDAqMAUGAytlcAMhAFXE4vDj9tmklK+0CyATzkL2Z12e5FUWcfwt6OGOiFKeanNlbmRlcl9zaWdYQNd4rK8ikytRQQXgUhgWoDIH+2wZqeo/Q6AT903rR0Xej7WZxoGd0uVZiLoOeT5R5GUi5izOeP6DTuzbqKiBNQ8="
-  ){ 
-  buttonIndex
-    user {
-      username
-    }
-    url
-  }
-}
-```
-
-Response
-
-```json
-{
-  "data": {
-    "unpackFrameMessage": {
-      "buttonIndex": 2,
-      "user": {
-        "username": "PopularDude99"
-      },
-      "url": "https://dscvr-frame-carousel.vercel.app/"
-    }
-  }
-}
-
 ```

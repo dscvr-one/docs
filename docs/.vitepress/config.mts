@@ -18,19 +18,23 @@ export default defineConfig({
         items: [
           { text: 'What is DSCVR?', link: '/' },
           { text: 'Social Primitives', link: '/introduction/social-primitives' },
-          { text: 'Post a Frame', link: '/introduction/post-a-frame' }
         ]
       },
       {
         text: 'Build',
         items: [
-          { text: 'Frames', items: [
-            { text: 'Build a Frame', link: '/build/frames/build-a-frame'  },
-            { text: 'Frame Concepts', link: '/build/frames/frame-concepts'  },
-            { text: 'Frame Specification', link: '/build/frames/frame-specification'  }
-
-          ] },
-          { text: 'DSCVR API', link: '/build/dscvr-api/' }
+          { text: 'DSCVR API', link: '/build/dscvr-api/' },
+          { text: 'DSCVR Canvas', link: '/build/dscvr-canvas/',
+            items: [
+              { text: 'Build a Canvas', link: '/build/dscvr-canvas/build-a-canvas' },
+              { text: 'Test a Canvas', link: '/build/dscvr-canvas/testing-a-canvas' },
+              { text: 'Distribute a Canvas', link: '/build/dscvr-canvas/distribute-a-canvas' },
+              { text: 'Canvas Client SDK', link: '/build/dscvr-canvas/canvas-client-sdk' },
+              { text: 'Canvas Examples', link: '/build/dscvr-canvas/canvas-examples' },
+              { text: 'Canvas Design Guidelines', link: '/build/dscvr-canvas/canvas-design-guidelines' },
+              { text: 'Canvas Security', link: '/build/dscvr-canvas/canvas-security' },
+            ]
+          }
         ]
       }
     ],
