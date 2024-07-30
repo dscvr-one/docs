@@ -14,8 +14,8 @@ Canvas Applications can use the [Client SDK package](https://www.npmjs.com/packa
 
 Canvas Applications can use the [DSCVR API](../dscvr-api/index.md) to access DSCVR's social graph data. This data provides additional information about the user such as their follower graph, or the context that the app is embedded in like the portal. One use-case of DSCVR API is to perform conditional actions, for example when a user likes a post, or has a certain number of followers, etc.
 
-The [Design guidelines](#canvas-application-styling-guidelines) section describes both the styling recommendations to ensure canvas applications look good as well as some of the design considerations when building Canvas Applications.
+The [Design Guidelines](./canvas-design-guidelines.md) section describes both the styling recommendations to ensure canvas applications look good as well as some of the design considerations when building Canvas Applications.
 
-Checkout some of the [examples](#canvas-examples) to help jump-start your Canvas Application!
+Checkout some of the [examples](./canvas-examples.md) to help jump-start your Canvas Application!
 
 To test a Canvas Application please see [Testing a Canvas Appliction](./test-a-canvas.md). When you're ready to distribute your Canvas Application, check out the [Distribute a Canvas Application](./distribute-a-canvas.md) page.
