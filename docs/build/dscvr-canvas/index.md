@@ -1,8 +1,11 @@
 # DSCVR Canvas Embedded Apps
 
-DSCVR Canvas is a framework that allows any web application to be embedded and distributed on DSCVR's platform. Canvas Applications can be built using any web framework or library, and deployed on the platform of your choice.
+DSCVR Canvas is a framework that allows any web application to be embedded and distributed on DSCVR's platform.
 
-[video]
+<video controls>
+  <source src="./media/dscvr-canvas-promo.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video> 
 
 ::: warning
 DSCVR Canvas is currently in early preview. The UX, protocol, and tooling may change as the framework evolves and feedback from developers.
