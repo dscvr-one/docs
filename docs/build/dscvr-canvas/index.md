@@ -3,7 +3,7 @@
 DSCVR Canvas is a framework that allows any web application to be embedded and distributed on DSCVR's platform.
 
 <video controls>
-  <source src="./media/dscvr-canvas-promo.mp4" type="video/mp4">
+  <source src="https://storage.googleapis.com/production-cdn1-bucket/DSCVR%20Canvas%20Promo.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video> 
 
