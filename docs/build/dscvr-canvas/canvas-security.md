@@ -1,11 +1,10 @@
-
-## Canvas Security
+# Canvas Security
 
 To protect users, application developers and the DSCVR platform, Canvas Applications are run in a [sandboxed iframe](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe#sandbox) with a strict [Content Security Policy (CSP)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP). 
 
 In order to enforce a standard CSP for all applications, DSCVR routes the application traffic through a proxy. This is done by mapping the application's subdomain to a DSCVR-controlled subdomain. The proxy then adds the standard CSP to the application's response headers.
  
-### Customizing the Content Security Policy
+## Customizing the Content Security Policy
 
 Applications that access resources, scripts, or stylesheets from external URLs need to specify these URLs in the CSP policy. This is necessary to ensure that the application can access the resources it needs while maintaining the security of the DSCVR platform.
 
