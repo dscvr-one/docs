@@ -27,7 +27,7 @@ export default defineConfig({
           { text: 'DSCVR Canvas', link: '/build/dscvr-canvas/',
             items: [
               { text: 'Build a Canvas', link: '/build/dscvr-canvas/build-a-canvas' },
-              { text: 'Post a Canvas', link: '/build/dscvr-canvas/post-a-canvas' },
+              { text: 'Distribute a Canvas', link: '/build/dscvr-canvas/distribute-a-canvas' },
               { text: 'Canvas Client SDK', link: '/build/dscvr-canvas/canvas-client-sdk' },
               { text: 'Canvas Examples', link: '/build/dscvr-canvas/canvas-examples' },
               { text: 'Canvas Design Guidelines', link: '/build/dscvr-canvas/canvas-design-guidelines' },

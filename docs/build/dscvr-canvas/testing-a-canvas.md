@@ -11,7 +11,7 @@ There are two ways to test a Canvas Application
 
 ## Previewing Applications During Development and Testing
 
-The use of development previews and hot reloading is very common during web application development. The following steps can be used to preview Canvas Applications during development:
+The following steps can be used to preview Canvas Applications during development:
 
 Setup a SSH tunnel to your local development server. The following command, for example can be used to setup a tunnel to a local server running on port 5173 using cloudflared:
 
