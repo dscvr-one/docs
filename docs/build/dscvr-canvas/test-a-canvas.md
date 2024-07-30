@@ -1,4 +1,4 @@
-# Testing a Canvas Application
+# Test a Canvas Application
 
 There are two ways to test a Canvas Application
 
