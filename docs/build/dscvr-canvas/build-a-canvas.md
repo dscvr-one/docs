@@ -8,7 +8,7 @@ Any Web Application can be easily made into a Canvas Application with just the i
 <meta name="og:image" content="https://your-application.com/preview-image.png">
 ```
 
-To protect both DSCVR's users and Canvas Application developers, DSCVR runs Canvas Applications within a sandbox. This is explained more in the [Canvas Application Security](#canvas-application-security) section. Some applications may need to define additional [Content Security Policy directives](#canvas-content-security-policy-directives) to conform with DSCVR's sandbox.
+To protect both DSCVR's users and Canvas Application developers, DSCVR runs Canvas Applications within a sandbox. This is explained more in the [Canvas Application Security](./canvas-security.md). Some applications may need to define additional [Content Security Policy directives](./canvas-security.md#customizing-the-content-security-policy) to conform with DSCVR's sandbox.
 
 Canvas Applications can use the [Client SDK package](https://www.npmjs.com/package/@dscvr-one/canvas-client-sdk) to interact with the DSCVR frontend.
 
@@ -18,15 +18,4 @@ The [Design guidelines](#canvas-application-styling-guidelines) section describe
 
 Checkout some of the [examples](#canvas-examples) to help jump-start your Canvas Application!
 
-
-## Previewing Applications During Development and Testing
-
-The use of development previews and hot reloading is very common during web application development. Some additional steps are required to preview Canvas Applications during development:
-
-1. Setup a SSH tunnel to your local development server. The following command, for example can be used to setup a tunnel to a local server running on port 5173 using cloudflared:
-
-```bash
-npx cloudflared tunnel --url http://localhost:5173
-```
-
-2. Configure the development server to use a Content Security Policy that conforms with the Canvas Sandbox
+To test a Canvas Application please see [Testing a Canvas Appliction](./testing-a-canvas.md). When you're ready to distribute your Canvas Application, check out the [Distribute a Canvas Application](./distribute-a-canvas.md) page.

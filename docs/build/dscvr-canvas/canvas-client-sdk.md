@@ -6,7 +6,7 @@ The [Client SDK package](https://www.npmjs.com/package/@dscvr-one/canvas-client-
 - Performing transactions on the Solana blockchain
 - Opening external links in a safe way
 
-To use the SDK:
+## Using the SDK
 
 1. Install the Client SDK package
 
@@ -31,4 +31,3 @@ if (response) {
 ```
 
 3. Please see the [SDK documentation](https://www.npmjs.com/package/@dscvr-one/canvas-client-sdk) and examples for more information on how to use the available functionality.
-
