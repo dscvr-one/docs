@@ -18,4 +18,4 @@ The [Design Guidelines](./canvas-design-guidelines.md) section describes both th
 
 Checkout some of the [examples](./canvas-examples.md) to help jump-start your Canvas Application!
 
-To test a Canvas Application please see [Testing a Canvas Appliction](./test-a-canvas.md). When you're ready to distribute your Canvas Application, check out the [Distribute a Canvas Application](./distribute-a-canvas.md) page.
+To test a Canvas Application please see [Testing a Canvas Application](./test-a-canvas.md). When you're ready to distribute your Canvas Application, check out the [Distribute a Canvas Application](./distribute-a-canvas.md) page.

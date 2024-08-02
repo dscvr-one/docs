@@ -12,12 +12,12 @@ DSCVR allows applications to provide their own CSP policy for the following CSP 
 
 - `script-src`
 - `style-src`
-- `img-src'`
+- `img-src`
 - `font-src`
 - `connect-src`
 - `media-src`
 
 Please note that values such as `unsafe-inline` and `unsafe-eval` are not allowed in the CSP. Inlined scripts and styles can be used via a [nonce](https://content-security-policy.com/nonce/). CSP directives can be modified by the application to specify additional `https` URLs that the application needs to access. DSCVR will merge the CSP sent from your application server with the standard CSP.
 
-DSCVR on a case by case basis can allow exceptions to the above CSP rules. Please [reach out](#questions)if you believe your application requires this.
+DSCVR on a case by case basis can allow exceptions to the above CSP rules. Please [reach out](#questions) if you believe your application requires this.
 
