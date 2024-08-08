@@ -30,4 +30,4 @@ if (response) {
 }
 ```
 
-3. Please see the [SDK documentation](https://www.npmjs.com/package/@dscvr-one/canvas-client-sdk) and examples for more information on how to use the available functionality.
+3. Please see the [SDK documentation](https://www.npmjs.com/package/@dscvr-one/canvas-client-sdk) and [examples](https://github.com/dscvr-one/dscvr-canvas/tree/main/examples) for more information on how to use the available functionality.

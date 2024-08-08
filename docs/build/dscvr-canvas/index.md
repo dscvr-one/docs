@@ -1,6 +1,10 @@
 # DSCVR Canvas Embedded Apps
 
-DSCVR Canvas is a framework that allows any web application to be embedded and distributed on DSCVR's platform. Applications can be built using familiar web UI and server frameworks (Vue, React, NextJS, NextJS, etc), and deployed on the infrastructure of your choice (Vercel, Heroku, Cloudflare, etc). Canvas provides an intuitive and simple way to build and distribute applications on DSCVR.
+DSCVR Canvas is a framework for building web applications, referred to as Canvases, that are embedded and distributed on DSCVR's platform. 
+
+Canvases can be built using familiar Web UI and server frameworks (Vue, React, Next.js, etc), and deployed on the infrastructure of your choice (Vercel, Heroku, Cloudflare, etc). 
+
+Once built, a Canvas can be easily distributed on DSCVR by embedding it in a post.
 
 <video controls>
   <source src="https://storage.googleapis.com/production-cdn1-bucket/DSCVR%20Canvas%20Promo.mp4" type="video/mp4">
@@ -8,19 +12,17 @@ DSCVR Canvas is a framework that allows any web application to be embedded and d
 </video> 
 
 ::: warning
-DSCVR Canvas is currently in early preview. The UX, protocol, and tooling may change as the framework evolves and feedback from developers.
+DSCVR Canvas is currently in early preview. The UX, protocol, and tooling may change as the framework evolves and based on feedback from the development community.
 :::
 
-## Getting Started
+## Learn More
 
-To get started please refer to the following pages:
+- [Build a Canvas](./build-a-canvas.md): The basics of building a Canvas.
+- [Distribute a Canvas](./distribute-a-canvas.md): Distribute a Canvas on DSCVR.
+- [Security Model](./canvas-security.md): Details of the security model for Canvas.
+- [Design Guidelines](./canvas-design-guidelines.md): Design guidelines for Developers.
+- [Examples](./canvas-examples.md): Examples of Canvases to jump-start your development.
 
-- [Build a Canvas Application](./build-a-canvas.md): To learn the basics of building a canvas application.
-- [Distribute a Canvas Application](./distribute-a-canvas.md): To learn how to distribute a canvas on DSCVR.
-- [Canvas Examples](./canvas-examples.md): To see some examples of Canvas Applications and jump-start your development.
-- [Canvas Security](./canvas-security.md): To understand the security model of Canvas Applications
-- [Canvas Design Guidelines](./canvas-design-guidelines.md): To understand the design guidelines for Canvas Applications
+## Questions?
 
-## Questions
-
-If you have any questions or need help, please reach out in the [DSCVR Developer Discord](https://discord.gg/DX4CaFph3s).
+Reach out in the [DSCVR Developer Discord](https://discord.gg/DX4CaFph3s).
