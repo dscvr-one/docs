@@ -13,7 +13,7 @@ Any Web Application can be easily made into a Canvas with just a few steps:
 
 2. Setup a [Content Security Policy](./canvas-security.md#customizing-the-content-security-policy) if needed. A content security policy is necessary if the application accesses resources, scripts, or stylesheets from external URLs.
 
-3. (Optional) Use the [Canvas Client SDK](https://www.npmjs.com/package/@dscvr-one/canvas-client-sdk) to interact with the DSCVR frontend, and to get initial information about the user and the post that the Canvas is embedded in.
+3. (Optional) Use the [Canvas Client SDK](./canvas-client-sdk.md) to interact with the DSCVR frontend, and to get initial information about the user and the post that the Canvas is embedded in.
    
 4. (Optional) Use [DSCVR API](../dscvr-api/index.md) to access DSCVR's social graph data. DSCVR API provides additional information about the user such as their follower graph, or the context that the app is embedded in like the portal. One use-case of DSCVR API is to perform conditional actions, for example when a user likes a post, or has a certain number of followers, etc.
 
